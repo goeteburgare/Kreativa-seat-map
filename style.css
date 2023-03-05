@@ -14,7 +14,6 @@ body{
     padding: 15px;
     display: flex;
     justify-content: space-evenly;
-    border: solid black 2px;
     gap : 200px;
     flex-wrap: wrap;
 }
