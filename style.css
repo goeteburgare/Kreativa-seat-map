@@ -1,0 +1,63 @@
+header{
+    display: flex;
+    justify-content: center;    
+    padding: 30px;
+}
+
+body{
+    background-color: darkgray;
+}
+
+.bordGroup{
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    border: solid black 2px;
+    gap : 200px;
+    flex-wrap: wrap;
+}
+
+.bord1, .bord2, .bord3, .bord4{
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+    border: solid black 2px;
+    background-color: yellow;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 2%;
+}
+
+.bord5{
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+    margin: auto;
+    margin-left: 355px;
+    margin-bottom: 100px;
+    border: solid black 2px;    
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 2%;
+}
+
+.stol{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border: solid black 2px ;
+    border-radius: 150%;
+}
+
+

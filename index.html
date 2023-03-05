@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Kreativa Seat Map
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <header>
+       <a href="https://www.arbetetsmuseum.se/"> <img src="am-retinalogo.png" alt="am-logo"></a>
+    </header>
+
+    <body>
+        <p style="text-align: center; font-size: 40px;">Seat Map</p>
+        
+        <div class="bord5">
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+        </div>
+
+        <div class="bordGroup">
+            <div class="bord1">
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+            </div>
+            <div class="bord2">
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+            </div>
+            <div class="bord3">
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+            </div>
+            <div class="bord4">
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+                <div class="stol" style="background-color: green;"></div>
+            </div>
+        </div>
+
+        <script>
+            // Get all the boxes
+            const boxes = document.querySelectorAll('.stol');
+
+            // Add a click event listener to each box
+            boxes.forEach(stol => {
+            stol.addEventListener('click', () => {
+            // Toggle the background color between green and red
+                if (stol.style.backgroundColor === 'green') {
+                    stol.style.backgroundColor = 'red';
+                } else {
+                    stol.style.backgroundColor = 'green';
+                }
+         });
+        });
+        
+        function countGreenElements(stol) {
+  const div = document.getElementById(stol);
+  const elements = div.getElementsByTagName('*');
+  let count = 0;
+  
+  for (let i = 0; i < elements.length; i++) {
+    const element = elements[i];
+    const backgroundColor = window.getComputedStyle(element).getPropertyValue('background-color');
+    if (backgroundColor === 'rgb(0, 128, 0)' || backgroundColor === 'green') {
+      count++;
+    }
+  }
+  
+  return count;
+}
+        </script>
+
+        <footer>
+            <p>
+                adress?
+            </p>
+        </footer>
+    </body>
+
+</html>
