@@ -73,22 +73,7 @@
                 }
          });
         });
-        
-        function countGreenElements(stol) {
-  const div = document.getElementById(stol);
-  const elements = div.getElementsByTagName('*');
-  let count = 0;
-  
-  for (let i = 0; i < elements.length; i++) {
-    const element = elements[i];
-    const backgroundColor = window.getComputedStyle(element).getPropertyValue('background-color');
-    if (backgroundColor === 'rgb(0, 128, 0)' || backgroundColor === 'green') {
-      count++;
-    }
-  }
-  
-  return count;
-}
+       
         </script>
 
         <footer>
