@@ -52,7 +52,6 @@ body{
 }
 
 .stol{
-    cursor: pointer;
     width: 100px;
     height: 100px;
     border: solid black 2px ;
