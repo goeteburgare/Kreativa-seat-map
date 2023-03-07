@@ -64,15 +64,28 @@
 
             // Add a click event listener to each box
             boxes.forEach(stol => {
-            stol.addEventListener('click', () => {
+                stol.addEventListener('click', () => {
             // Toggle the background color between green and red
-                if (stol.style.backgroundColor === 'green') {
-                    stol.style.backgroundColor = 'red';
-                } else {
-                    stol.style.backgroundColor = 'green';
-                }
-         });
-        });
+                    if (stol.style.backgroundColor === 'green') {
+                        stol.style.backgroundColor = 'red';
+                    } else {
+                        stol.style.backgroundColor = 'green';
+                    }
+            });
+            });
+
+            const tables = document.querySelectorAll('.bord');
+
+            tables.forEach(bord => {
+                bord.addEventListener('click', () => {
+            // Toggle the background color between green and red
+                    if (bord.style.backgroundColor === 'green') {
+                        bord.style.backgroundColor = 'red';
+                    } else {
+                        bord.style.backgroundColor = 'green';
+                    }
+            });
+            });
        
         </script>
 
