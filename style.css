@@ -22,8 +22,7 @@ body{
     width: 250px;
     height: 400px;
     padding: 20px;
-    border: solid black 2px;
-    background-color: yellow;    
+    border: solid black 2px;   
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -40,7 +39,6 @@ body{
     margin: auto;
     margin-bottom: 100px;
     border: solid black 2px;    
-    background-color: yellow;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
